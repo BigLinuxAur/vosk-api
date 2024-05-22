@@ -14,10 +14,10 @@ pkgdesc='Offline speech recognition toolkit'
 arch=('x86_64')
 url='https://alphacephei.com/vosk/'
 license=('Apache-2.0')
-makedepends=('srt' 'python-srt' 'python-pysrt' 'git' 'cmake' 'gradle' 'python' 'python-build' 'python-cffi' 'python-installer'
-             'python-requests' 'python-setuptools' 'python-srt' 'python-tqdm' 'python-websockets'
+makedepends=('srt' 'python-pysrt' 'python-pysrt' 'git' 'cmake' 'gradle' 'python' 'python-build' 'python-cffi' 'python-installer'
+             'python-requests' 'python-setuptools' 'python-pysrt' 'python-tqdm' 'python-websockets'
              'python-wheel' 'java-environment=17')
-checkdepends=('srt' 'python-srt' 'python-pysrt' 'ffmpeg' 'python-numpy')
+checkdepends=('srt' 'python-pysrt' 'python-pysrt' 'ffmpeg' 'python-numpy')
 source=("https://github.com/alphacep/vosk-api/archive/v${pkgver}/${pkgbase}-${pkgver}.tar.gz"
         "https://github.com/xianyi/OpenBLAS/archive/v${_openblas_ver}/openblas-${_openblas_ver}.tar.gz"
         "https://github.com/alphacep/clapack/archive/v${_clapack_ver}/clapack-${_clapack_ver}.tar.gz"
@@ -127,7 +127,7 @@ package_vosk-api() {
 
 package_python-vosk() {
     pkgdesc='Python module for vosk-api'
-    depends=('python' 'python-cffi' 'python-requests' 'python-srt' 'python-tqdm' 'python-websockets'
+    depends=('python' 'python-cffi' 'python-requests' 'python-pysrt' 'python-tqdm' 'python-websockets'
              "vosk-api=${pkgver}")
     
     local _pyver
