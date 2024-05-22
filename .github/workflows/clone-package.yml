@@ -50,6 +50,7 @@ jobs:
           cd $gitfolder
           # sed -i "/\bdepends=/s/(/\('xpto\' /" PKGBUILD
           sed -i "/makedepends=/s/(/\('srt\' /" PKGBUILD
+          sed -i "/checkdepends=/s/(/\('srt\' /" PKGBUILD
           # sed -i '/\bdepends=/!b; :a; n; a\    '\'xpto\' PKGBUILD
 
       - name: Update github
