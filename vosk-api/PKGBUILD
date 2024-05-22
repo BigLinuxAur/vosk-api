@@ -14,7 +14,7 @@ pkgdesc='Offline speech recognition toolkit'
 arch=('x86_64')
 url='https://alphacephei.com/vosk/'
 license=('Apache-2.0')
-makedepends=('git' 'cmake' 'gradle' 'python' 'python-build' 'python-cffi' 'python-installer'
+makedepends= ('srt' 'git' 'cmake' 'gradle' 'python' 'python-build' 'python-cffi' 'python-installer'
              'python-requests' 'python-setuptools' 'python-srt' 'python-tqdm' 'python-websockets'
              'python-wheel' 'java-environment=17')
 checkdepends=('ffmpeg' 'python-numpy')
